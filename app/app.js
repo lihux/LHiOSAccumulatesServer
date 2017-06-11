@@ -14,7 +14,7 @@ function respondV1UpdateServer(req, res, next) {
   res.send('服务端已经成功更新上线');
 }
 
-function respondV1HelloWorld(req, res, next) {
+function respondV1Love(req, res, next) {
   res.send('hello ， I love you!');
 }
 
