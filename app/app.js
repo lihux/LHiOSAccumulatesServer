@@ -6,7 +6,7 @@ function respondV1HelloWorld(req, res, next) {
 }
 
 function respondV1UpdateServer(req, res, next) {
-	require("child_process").execFile('/home/ec2-user/restify/updateServer.sh', nil, (error, stdout, stderr) => {
+	require("child_process").execFile('/home/ec2-user/restify/updateServer.sh', null, (error, stdout, stderr) => {
   if (error) {
     throw error;
   }
