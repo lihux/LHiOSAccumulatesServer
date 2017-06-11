@@ -2,7 +2,7 @@
 echo "$#"
 git add .
 message="update auto"
-if [ "$#" -eq "2" ]
+if [ "$#" -eq "1" ]
 then
 message=$1
 fi
