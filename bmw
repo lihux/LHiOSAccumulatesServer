@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "$#"
 git add .
 message="update auto"
 if [ "$#" -eq "2" ]
