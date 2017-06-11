@@ -1,5 +1,10 @@
 #!/bin/bash
 git add .
-git commit -m "update auto"
+message="update auto"
+if [ "$#" eq "2" ]
+then
+message=$1
+fi
+git commit -m "${message}" 
 git pull --rebase
 git push
