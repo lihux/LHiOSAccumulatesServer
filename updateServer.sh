@@ -1,4 +1,4 @@
 #!/bin/bash
-git c .
-git c master
-git pr
+git  stash
+git checkout master
+git pull --rebase
