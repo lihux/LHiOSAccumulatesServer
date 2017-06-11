@@ -2,7 +2,7 @@ var restify = require('restify');
 
 //V1:since 20170611
 function respondV1HelloWorld(req, res, next) {
-  res.send('hello ， 英语！this is a message from lihux, enjoy your life ^_^');
+  res.send('hello ， 物理！this is a message from lihux, enjoy your life ^_^');
 }
 
 function respondV1UpdateServer(req, res, next) {
