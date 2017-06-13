@@ -18,12 +18,17 @@ function respondV1Love(req, res, next) {
   res.send('hello ， I love you!');
 }
 
+function responseV1CreateTopic(req, res, next) {
+	res.send('服务端收到post请求，内容是'+req);
+}
+
 //createServer
 var server = restify.createServer();
 var v1 = '/accumulates/v1'
 
 server.get(v1 + '/hello/lihux', respondV1HelloWorld);
 server.get(v1 + '/updateServer', respondV1UpdateServer);
+server.post(v1 + '/create/topic', responseV1CreateTopic);
 //server.get(v1 + '/love', respondV1Love);
 //lalala
 
