@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+spawn su - root
+expect "Password:"
+send "lihui20021955\r"
+expect "#"
+send "cd /home/ec2-user/restify\r"
+expect "#"
+send "git checkout master\r"
+expect "#"
+send "git pull --rebase\r"
+expect "#"
+send "git checkout master"
+expect "#"
+interact
