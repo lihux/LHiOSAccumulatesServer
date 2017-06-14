@@ -20,7 +20,6 @@ function respondV1Love(req, res, next) {
 
 function responseV1CreateTopic(req, res, next) {
 	res.send('服务端收到post请求，内容是'+req);
-	return next;
 }
 
 //createServer
